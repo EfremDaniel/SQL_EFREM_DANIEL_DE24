@@ -1,1 +1,3 @@
-# SQL_EFREM_DANIEL_DE24
+# SQL course with duckdb
+
+Jag lär mig SQL. Jag kommer använda mig duckdb och lära mig idag.
