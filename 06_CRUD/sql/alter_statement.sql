@@ -1,2 +1,3 @@
 ALTER TABLE database.duckdb ADD COLUMN learnt BOOLEAN DEFAULT FALSE;
 
+ALTER SEQUENCE id_duckdb_sequence RESTART WITH 1;

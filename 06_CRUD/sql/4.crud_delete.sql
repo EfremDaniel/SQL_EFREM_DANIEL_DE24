@@ -10,3 +10,4 @@ WHERE
 SELECT * FROM database.duckdb;
 
 DELETE FROM database.duckdb WHERE id > 10;
+
