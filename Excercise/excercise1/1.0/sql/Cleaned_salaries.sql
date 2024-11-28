@@ -52,6 +52,32 @@ SET
 SELECT * FROM main.transformers ORDER BY salary_in_usd DESC;
 
 --------------------------------------------
+SELECT
+	CASE
+		WHEN experience_level = 'SE' THEN 'Senior'
+		WHEN experience_level = 'EX' THEN 'Expert'
+		WHEN experience_level = 'MI' THEN 'Mid-level'
+		WHEN experience_level = 'EN' THEN 'Entry-level'
+		ELSE experience_level
+		END
+		experience_level
+FROM
+	main.transformers;
+
+UPDATE
+	main.transformers
+SET
+	experience_level = CASE
+	WHEN experience_level = 'SE' THEN 'Senior'
+	WHEN experience_level = 'EX' THEN 'Expert'
+	WHEN experience_level = 'MI' THEN 'Mid-level'
+	WHEN experience_level = 'EN' THEN 'Entry-level'
+	ELSE experience_level
+	END;
+
+SELECT * FROM main.transformers;
+
+--------------------------------------------
 
 ALTER TABLE main.transformers ADD COLUMN salary_in_sek DOUBLE;
 
