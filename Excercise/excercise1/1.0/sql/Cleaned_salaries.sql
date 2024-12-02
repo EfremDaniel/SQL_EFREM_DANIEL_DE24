@@ -132,4 +132,3 @@ SELECT * FROM main.transformers ORDER BY salary_in_sek DESC;
 --------------------------------------------------------------
 
 
-
