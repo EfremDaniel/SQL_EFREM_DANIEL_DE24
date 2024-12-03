@@ -47,12 +47,13 @@ WHERE
 	c.first_name LIKE 'J%'
 	AND c.last_name LIKE 'D%';
 UNION 
+
 SELECT
 	'Actor' AS Type,
 	a.first_name,
 	a.last_name
 FROM
-	main.actor a 
+	main.actor a
 WHERE
 	a.first_name LIKE 'J%'
 	AND a.last_name LIKE 'D%';
