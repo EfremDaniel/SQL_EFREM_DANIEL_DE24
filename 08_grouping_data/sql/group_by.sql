@@ -30,3 +30,5 @@ ORDER BY
 	LIMIT 5;
 	
 SELECT DISTINCT Year FROM main.cleaned_food ORDER BY Year DESC;
+
+----

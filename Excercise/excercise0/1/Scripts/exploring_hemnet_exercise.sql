@@ -59,7 +59,21 @@ SELECT
 FROM
 	main.hemnet_data
 WHERE
-	final_price > 10000000; 
+	final_price > 10000000;
+
+
+SELECT
+	hd.address,
+	hd.final_price,
+	hd.rooms 
+FROM
+	main.hemnet_data hd
+WHERE hd.rooms < 4;
+
+
+
+
+
 
 
 
